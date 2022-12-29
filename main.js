@@ -9,18 +9,20 @@ btnCopy.classList.add('btn');
 
 const encrypt = (text) => {
   return text
-        .replaceAll('a', 'ai')
+        
         .replaceAll('e', 'enter')
         .replaceAll('i', 'imes')
+        .replaceAll('a', 'ai')
         .replaceAll('o', 'ober')
         .replaceAll('u', 'ufat');
 }
 
 const decrypt = (text) => {
   return text
-        .replaceAll('ai', 'a')
+        
         .replaceAll('enter', 'e')
         .replaceAll('imes', 'i')
+        .replaceAll('ai', 'a')
         .replaceAll('ober', 'o')
         .replaceAll('ufat', 'u');
 }
